@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Интерактивный JSON Просмотрщик</title>
+    
+    <!-- Подключаем библиотеки -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.json-viewer/json-viewer/jquery.json-viewer.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery.json-viewer/json-viewer/jquery.json-viewer.css">
+
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png?v=2">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png?v=2">
+    <link rel="icon" type="image/png" sizes="48x48" href="/img/favicon-48x48.png?v=2">
+    <link rel="icon" type="image/png" sizes="64x64" href="/img/favicon-64x64.png?v=2">
+    <link rel="icon" type="image/png" sizes="128x128" href="/img/favicon-128x128.png?v=2">
+    <link rel="icon" type="image/png" sizes="256x256" href="/img/favicon-256x256.png?v=2">
+    <link rel="apple-touch-icon" sizes="152x152" href="/img/apple-touch-icon.png?v=2">
+    <link rel="icon" type="image/png" sizes="192x192" href="/img/android-chrome-192x192.png?v=2">
+    <link rel="icon" type="image/png" sizes="512x512" href="/img/android-chrome-512x512.png?v=2">
+    <link rel="manifest" href="/img/site.webmanifest">
+    
+
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="container">
+        <h2>Интерактивный JSON Просмотрщик</h2>
+        <input type="file" id="fileInput" accept="application/json" class="btn" value="Выбрать файл">
+        <textarea id="jsonInput" placeholder="Вставьте JSON здесь..."></textarea>
+        <div id="jsonEditor" class="editor-container"></div>
+        <button id="renderJson" class="btn">Отобразить JSON</button>
+        <button id="toggleJson" class="btn">Свернуть/Развернуть JSON</button>
+        <button id="copyJson" class="btn">Копировать JSON</button>
+        <button id="toggleTheme" class="btn">Переключить тему</button>
+        <div id="jsonOutput" class="json-container dark-mode"></div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
